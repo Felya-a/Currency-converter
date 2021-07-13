@@ -1,0 +1,33 @@
+.main {
+  display: grid;
+}
+
+.mainForm {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 15px;
+  input, select {
+    box-sizing: border-box;
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+    &.error {
+      border: red 2px solid;
+      border-radius: 2px;
+    }
+  }
+  select {
+    font-size: 15px;
+  }
+  button {
+    height: 40px;
+  }
+  div{
+    border: 1px solid #767676;
+    border-radius: 2px;
+    text-align: center;
+  }
+  .result{
+    // padding-left: 15px;
+  }
+}
