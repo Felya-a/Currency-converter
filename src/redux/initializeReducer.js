@@ -1,4 +1,4 @@
-import { getValute } from "./api";
+import { getValute, sendMail} from "./api";
 
 const SET_INIT = "SET_INIT"
 
@@ -7,6 +7,9 @@ export const initApp = (valutes) => ({ type: SET_INIT, valutes});
 export const initAppTC = () => async (dispatch) => {
   const response = await getValute();
   if (response) dispatch(initApp(response.data.Valute));
+}
+export const sendMailTC = (data) => async (dispatch) => {
+  const response = await sendMail(data);
 }
 
 const initialState = {

@@ -3,3 +3,8 @@ export const emailValid = value => {
   if (!EMAIL_REGEXP.test(value)) return "Invalid email address"
   return undefined;
 }
+
+export const required = value => {
+  if (!value) return "Field is required"
+  return undefined
+}

@@ -1,5 +1,9 @@
 .main {
   display: grid;
+  i {
+    margin-top: 15px;
+    width: 220px;
+  }
 }
 
 .mainForm {
@@ -26,8 +30,5 @@
     border: 1px solid #767676;
     border-radius: 2px;
     text-align: center;
-  }
-  .result{
-    // padding-left: 15px;
   }
 }
